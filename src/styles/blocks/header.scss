@@ -1,0 +1,19 @@
+/* #region header */
+.header {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include header-bg-image;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  &__title {
+    @include title-position;
+  }
+}
+/* #endregion */

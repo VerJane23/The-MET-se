@@ -1,0 +1,41 @@
+/* #region icon */
+.icon {
+  display: block;
+  height: 24px;
+  width: 24px;
+  background-size: cover;
+  background-position: center;
+
+  @include hover(transform, scale(1.2));
+
+  @include on-tablet {
+    height: 32px;
+    width: 32px;
+  }
+
+  &--hint {
+    &--text {
+      opacity: 0;
+    }
+  }
+
+  &__phone {
+    background-image: url(../images/icons/Icon-Phone-call.svg);
+
+    @include on-desktop {
+      &:hover {
+        background-image: url(../images/effects/Cursor-Mouse-Mice.svg);
+        transform: translate(18px, 18px);
+      }
+    }
+  }
+
+  &__menu {
+    background-image: url(../images/icons/Icon-Burger-menu.svg);
+  }
+
+  &__close {
+    background-image: url(../images/icons/icon-close.svg);
+  }
+}
+/* #endregion */
